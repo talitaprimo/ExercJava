@@ -1,4 +1,4 @@
-package operadores;
+package tiposevariaveis;
 public class OperadoresAritmeticos {
 	    public static void main(String[] args) {
 	     int n1 = 3;
