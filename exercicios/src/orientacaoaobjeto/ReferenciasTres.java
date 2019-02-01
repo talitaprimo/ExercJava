@@ -1,6 +1,6 @@
 package orientacaoaobjeto;
 
-public class ExercicioTresReferencias {
+public class ReferenciasTres {
 
 	public static void main(String[] args) {
 		Conta primeiraConta = new Conta();

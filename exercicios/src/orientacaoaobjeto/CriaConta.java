@@ -3,9 +3,8 @@ package orientacaoaobjeto;
 public class CriaConta {
 
 	public static void main(String[] args) {
+		//instaciar um objeto
 		Conta primeiraConta = new Conta(); 
-		//instaciar uma conta
-		//variável primeiraConta é do tipo Conta
 		
 		primeiraConta.saldo = 200; // inserir um valor para o atributo saldo
 
@@ -14,8 +13,8 @@ public class CriaConta {
 		primeiraConta.saldo += 100;
 		System.out.println(primeiraConta.saldo);
 
-		Conta segundaConta = new Conta(); // objeto criado
-		segundaConta.saldo = 50; // referência atribuída a variável segundaConta
+		Conta segundaConta = new Conta();
+		segundaConta.saldo = 50;
 
 		System.out.println("Saldo da Primeira Conta: " + primeiraConta.saldo);
 		System.out.println("Saldo da Segunda Conta: " + segundaConta.saldo);

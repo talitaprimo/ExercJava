@@ -8,7 +8,6 @@ public class Aula01 {
 		
 		//Referência a atributo
 		c1.cor = "Azul";
-		c1.ponta = 0.5;
 		
 		//Chamada para o método
 		c1.tampar();

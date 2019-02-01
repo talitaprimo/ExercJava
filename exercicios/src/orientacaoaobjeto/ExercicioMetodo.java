@@ -3,17 +3,31 @@ package orientacaoaobjeto;
 public class ExercicioMetodo {
 
 	public static void main(String[] args) {
-		Conta contaTeste = new Conta();
+		Conta contaTalita = new Conta();
 		
-		contaTeste.saldo = 100;
-		System.out.println("Saldo inicial: " + contaTeste.saldo);
+		contaTalita.saldo = 100;
+		System.out.println("Conta Talita - Saldo inicial: " + contaTalita.saldo);
 		
-		contaTeste.deposita(50);
-		System.out.println("Saldo após depósito: " + contaTeste.saldo);
+		contaTalita.deposita(50);
+		System.out.println("Conta Talita - Saldo após depósito: " + contaTalita.saldo);
 		
-		boolean conseguiuRetirar = contaTeste.saca(20);
+		boolean conseguiuRetirar = contaTalita.saca(20);
 		System.out.println("Conseguiu retirar? " + conseguiuRetirar);
-		System.out.println("Saldo após saque: " + contaTeste.saldo);
+		System.out.println("Conta Talita - Saldo após saque: " + contaTalita.saldo);
+		
+		Conta contaMarcela = new Conta ();
+		contaMarcela.deposita(1000);
+		System.out.println("Conta Marcela - Saldo após depósito: " + contaMarcela.saldo);
+		
+		if(contaMarcela.transfere(300, contaTalita)){
+			System.out.println("Transferência com sucesso");
+		} else {
+			System.out.println("Faltou dinheiro");
+		}
+		
+		System.out.println("Conta Marcela - Saldo " + contaMarcela.saldo);
+		System.out.println("Conta Talita - Saldo " + contaTalita.saldo);
+		
 	}
 
 }

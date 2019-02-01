@@ -1,6 +1,6 @@
 package orientacaoaobjeto;
 
-public class TesteReferencias {
+public class Referencias {
 	public static void main(String[] args) {
 		Conta primeiraConta = new Conta(); 
 		// A variável primeiraConta faz referência a um objeto.

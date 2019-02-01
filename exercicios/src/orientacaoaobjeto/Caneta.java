@@ -3,33 +3,33 @@ package orientacaoaobjeto;
 public class Caneta {
 
 	// Atributos
-	String modelo;
-	String cor;
-	double ponta;
-	int carga;
-	boolean tampada;
+	public String modelo;
+	public String cor;
+	private double ponta;
+	protected int carga;
+	private boolean tampada;
 
 	// Métodos
 	// Lembrando que void significa sem retorno
-	void status(){
+	public void status(){
 		//this é o nome do objeto que chamou o método
-		System.out.println("Uma caneta " + this.cor);
-		System.out.println("Está tampada? " + this.tampada);
 		System.out.println("Modelo " + this.modelo);
+		System.out.println("Cor " + this.cor);
 		System.out.println("Ponta " + this.ponta);
 		System.out.println("Carga " + this.carga);
+		System.out.println("Está tampada? " + this.tampada);
 	}
 
-	void tampar() {
+	public void tampar() {
 		this.tampada = true;
 		//this é o nome do objeto que chamou o método
 	}
 
-	void destampar() {
+	public void destampar() {
 		this.tampada = false;
 	}
 	
-	void rabiscar() {
+	public void rabiscar() {
 		if (this.tampada == true){
 			System.out.println("Erro! Não posso rabiscar");
 		} else {
