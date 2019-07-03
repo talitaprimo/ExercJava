@@ -1,4 +1,4 @@
-package orientacaoaobjeto;
+package orientacaoaobjetop2;
 
 public class ReferenciasTres {
 
