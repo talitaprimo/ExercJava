@@ -3,7 +3,7 @@ package orientacaoaobjetop2;
 public class Aula05 {
 
 	public static void main(String[] args) {
-	ContaBanco c1 = new ContaBanco();     //crição do objeto c1
+	ContaBanco c1 = new ContaBanco();     //criação do objeto c1
 	c1.setNumConta(1111);
 	c1.setDono("Jubileu");
 	c1.abrirConta("CC");
