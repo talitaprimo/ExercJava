@@ -1,4 +1,4 @@
-package orientacaoaobjetop2;
+package orientacaoaobjeto;
 
 public class ContaBanco {
 

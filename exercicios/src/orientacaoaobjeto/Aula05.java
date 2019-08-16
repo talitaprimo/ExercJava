@@ -1,4 +1,6 @@
-package orientacaoaobjetop2;
+package orientacaoaobjeto;
+
+//Aula05 - Exemplo prático
 
 public class Aula05 {
 

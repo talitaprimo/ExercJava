@@ -1,4 +1,6 @@
-package orientacaoaobjetop2;
+package orientacaoaobjeto;
+
+//Aula 06 - Encapsulamento
 
 public class Aula06 {
 
