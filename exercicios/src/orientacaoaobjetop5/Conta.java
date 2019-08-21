@@ -7,6 +7,17 @@ public class Conta {
 	private int numero;
 	private Cliente titular; 
 	//atributo titular não é uma String, é uma referência a um cliente específico
+	private static int total;
+	
+	//Construtor
+	
+	public Conta(int agencia, int numero) {
+		Conta.total++;
+		System.out.println("O total de contas é: " + Conta.total); //total da classe Conta
+		this.agencia = agencia;
+		this.numero = numero;
+		System.out.println("Estou criando uma conta " + this.numero); //número deste objeto específico Conta
+	}
 	 
 	//Métodos
 	void deposita(double valor){
@@ -37,6 +48,10 @@ public class Conta {
 	}
 	
 	public void setNumero(int novoNumero){
+		if(novoNumero <= 0){
+			System.out.println("Número inválido!");
+			return;
+		}
 		this.numero=novoNumero;
 	}
 	
@@ -45,6 +60,10 @@ public class Conta {
 	}
 	
 	public void setAgencia(int agencia) {
+		if (agencia <= 0){
+			System.out.println("Número inválido!");
+			return;
+		}
 		this.agencia = agencia;
 	}
 	
@@ -58,5 +77,10 @@ public class Conta {
 	
 	public double getSaldo() {
 		return this.saldo;
+	}
+	
+	public static int getTotal(){    //Exemplo de Get com atributo estático
+		return Conta.total;
+		//ou return total;
 	}
 }
