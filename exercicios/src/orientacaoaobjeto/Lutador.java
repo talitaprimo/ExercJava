@@ -1,6 +1,6 @@
 package orientacaoaobjeto;
 
-//Aula 07 - Relacionamento entre classes (Agregação)
+//Aula 07 e 08 - Relacionamento entre classes (Agregação)
 
 public class Lutador {
 
