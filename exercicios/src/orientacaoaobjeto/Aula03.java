@@ -1,5 +1,7 @@
 package orientacaoaobjeto;
 
+//Aula 03 - Visibilidade
+
 public class Aula03 {
 	public static void main(String[] args) {
 		CanetaAula03 c1 = new CanetaAula03();

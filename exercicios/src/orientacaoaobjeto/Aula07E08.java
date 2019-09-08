@@ -18,8 +18,20 @@ public class Aula07E08 {
 		
 		Luta UEC01 = new Luta();
 		
-		UEC01.marcarLuta(l[0], l[1]);
+		/*UEC01.marcarLuta(l[0], l[1]);
 		UEC01.lutar();
+		l[0].status();
+		l[1].status();*/
 		
+		/*UEC01.marcarLuta(l[1], l[1]);
+		UEC01.lutar();*/
+		
+		/*UEC01.marcarLuta(l[1], l[5]);
+		UEC01.lutar();*/
+		
+		UEC01.marcarLuta(l[4], l[5]);
+		UEC01.lutar();
+		l[4].status();
+		l[5].status();	
 	}
 }

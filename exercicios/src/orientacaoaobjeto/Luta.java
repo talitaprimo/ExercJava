@@ -11,44 +11,52 @@ public class Luta {
 	private int rounds;
 	private boolean aprovada;
 	
-	public void marcarLuta(Lutador L1, Lutador L2){
-		if(L1.getCategoria() == L2.getCategoria() && (L1 != L2)){
+	public void marcarLuta(Lutador l1, Lutador l2){
+		//Categoria é do tipo String por isso usamos o método equals
+		if(l1.getCategoria().equals(l2.getCategoria()) && (l1 != l2)){ 
 			this.setAprovada(true);
-			this.setDesafiante(L2);
-			this.setDesafiado(L1);
+			this.setDesafiante(l2);
+			this.setDesafiado(l1);
 		} else {
 			this.setAprovada(false);
 			this.setDesafiante(null);
 			this.setDesafiado(null); 	
 		}
-		
 	}
 	
 	public void lutar(){
 		if(this.getAprovada() == true){
+			System.out.println("### DESAFIADO ###");
 			this.getDesafiado().apresentar();
+			System.out.println("-----------------");
+			System.out.println("### DESAFIANTE ###");
 			this.getDesafiante().apresentar();
-			int vencedor = (int)(Math.random()*2);
-			switch (vencedor == 0){
-			case 1: 
+			System.out.println("-----------------");
+			
+			Random aleatorio = new Random();
+			int vencedor = aleatorio.nextInt(3); // irá gerar 3 resultados 0,1 ou 2
+			System.out.println("Resultado da luta");
+			
+			switch (vencedor){
+			case 0: 
 				System.out.println("Empatou!");
 				this.getDesafiante().empatarLuta();
 				this.getDesafiado().empatarLuta();
 				break; 
-			case 2:
+			case 1:
 				System.out.println(this.getDesafiado().getNome() + " ganhou a luta");
 				this.getDesafiado().ganharLuta();
 				this.getDesafiante().perderLuta();
 				break;
 				
-			case 3:
+			case 2:
 				System.out.println(this.getDesafiante().getNome() + " ganhou a luta");
 				this.getDesafiante().ganharLuta();
 				this.getDesafiado().perderLuta(); 
 				break;}
-			}
-		} else {
-			System.out.println("Luta não pode acontecer");
+			System.out.println("--------------------------------");
+			} else {
+			System.out.println("A luta não pode acontecer");
 		}
 	}
 	
