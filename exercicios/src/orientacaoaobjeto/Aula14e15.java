@@ -1,5 +1,7 @@
 package orientacaoaobjeto;
 
+//Aulas 14 e 15 - Exercício
+
 public class Aula14e15 {
 
 	public static void main(String[] args) {
@@ -14,7 +16,11 @@ public class Aula14e15 {
 		
 		System.out.println(v[0].toString());
 		
-
+		Gafanhoto g[] = new Gafanhoto[2];
+		g[0] = new Gafanhoto("Jubileu", 22, "M", "juba");
+		g[1] = new Gafanhoto("Creuza", 12, "F", "creuzita");
+		
+		System.out.println(g[0].toString());
 	}
-
+	
 }

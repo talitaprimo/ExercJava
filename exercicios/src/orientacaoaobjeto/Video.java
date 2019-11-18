@@ -1,5 +1,7 @@
 package orientacaoaobjeto;
 
+//Implementação dos métodos da interface Ações Video
+
 public class Video implements AcoesVideo {
 	
 	//Atributos
@@ -25,17 +27,17 @@ public class Video implements AcoesVideo {
 	
 	@Override
 	public void play() {
-		
+		this.reproduzindo = true;
 	}
 	
 	@Override
 	public void pause() {
-		
+		this.reproduzindo = false;
 	}
 	
 	@Override
 	public void like() {
-		
+		this.curtidas++;
 	}
 	
 	//Métodos Getters e Setters
@@ -73,7 +75,7 @@ public class Video implements AcoesVideo {
 
 	@Override
 	public String toString() {
-		return "Video{" + "título = " + titulo + ", avaliação = " + avaliacao +
+		return "Video {" + "título = " + titulo + ", avaliação = " + avaliacao +
 				", views = " + views + ", curtidas = " + curtidas + ", reproduzindo = " 
 				+ reproduzindo + '}';
 	} 
