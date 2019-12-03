@@ -1,4 +1,4 @@
-package orientacaoaobjetop4;
+package composicaoObj;
 
 //Aula de composição de objetos
 
