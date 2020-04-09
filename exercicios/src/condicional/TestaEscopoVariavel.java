@@ -11,13 +11,13 @@ public class TestaEscopoVariavel {
 			double salario = 3800.0;
 		}
 
-		// Uma variável, a partir de sua declaração, passa a valer entre as
-		// chaves correspondentes,
-		// o que se denomina escopo.
+		/* Uma variável, a partir de sua declaração, passa a valer entre as
+		   chaves correspondentes,
+		   o que se denomina escopo. */
 
 		// System.out.println(salario);
-		// O código não compila, pois fora do bloco if/else a variável salario
-		// não existe mais.
+		
+		// O código não compila, pois fora do bloco if/else a variável salario não existe mais.
 
 	}
 }

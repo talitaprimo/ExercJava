@@ -6,8 +6,7 @@ public class Fluxo1 {
 
 	public static void main(String[] args) {
 		System.out.println("Ini do main");
-		metodo1();  
-		// Para chamar um método que não tem uma referência ou um objeto criado, ele precisa ser static
+		metodo1();  // Para chamar um método que não tem uma referência ou um objeto criado, ele precisa ser static
 		System.out.println("Fim do main");
 	}
 
