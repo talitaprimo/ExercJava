@@ -5,6 +5,7 @@ public class Pessoa {
 	private String cpf;
 	private int idade;
 	private Endereco endereco;
+	//atributo endereco é uma referência a um endereço específico
 	
 	//Métodos getter e setter
 	
