@@ -1,28 +1,25 @@
 package orientacaoaobjetop5;
 
-public class Conta {
+public abstract class Conta {
 	// Atributos
 	private double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular; 
 	//atributo titular não é uma String, é uma referência a um cliente específico
-	private static int total;
+	private static int total=0;
 	
 	//Construtor
 	
 	public Conta(int agencia, int numero) {
 		Conta.total++;
-		System.out.println("O total de contas é: " + Conta.total); //total da classe Conta
-		this.agencia = agencia;
+		System.out.println("Total de contas: " + Conta.getTotal()); //total da classe Conta		this.agencia = agencia;
 		this.numero = numero;
 		System.out.println("Estou criando uma conta " + this.numero); //número deste objeto específico Conta
 	}
 	 
 	//Métodos
-	void deposita(double valor){
-		this.saldo = this.saldo+valor;
-	}
+	public abstract void deposita(double valor);
 	
 	public boolean saca (double valor){
 		if (this.saldo >= valor){
@@ -33,9 +30,12 @@ public class Conta {
 		}
 	}
 	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
 	public boolean transfere(double valor, Conta destino){
-		if (this.saldo >= valor){
-			this.saldo = this.saldo - valor;
+		if(this.saca(valor)){
 			destino.deposita(valor);
 			return true;
 		} else {
